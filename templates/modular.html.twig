@@ -51,6 +51,8 @@
     {{ page.content }}
     {% for module in page.collection() %}
         <div id="{{ _self.pageLinkName(module.menu) }}"></div>
-        {{ module.content }}
+        <div class="{{ _self.pageLinkName( module.menu ) }}">
+            {{ module.content }}
+        </div>
     {% endfor %}
 {% endblock %}
