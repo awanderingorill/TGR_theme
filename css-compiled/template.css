@@ -886,8 +886,36 @@ ul.pagination {
   width: 100%; }
   .header h3 {
     display: inline-block; }
+    .header h3:first-of-type {
+      margin-left: 2rem;
+      margin-right: 1.5rem; }
+  .header .modular-row {
+    position: absolute;
+    top: 50px;
+    background: transparent;
+    left: 50%; }
+  .header .section-content {
+    position: relative;
+    left: -50%;
+    width: 700px; }
+  .header .header-boxes {
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap; }
+  .header .header-box:first-of-type {
+    background-color: red;
+    flex-grow: 1; }
+  .header .header-box:last-of-type {
+    background-color: black;
+    flex-grow: 1; }
 
 .modular .modular-row:last-child {
   margin-bottom: 2rem; }
+
+#body {
+  padding-top: 0; }
 
 /*# sourceMappingURL=template.css.map */
