@@ -1,4 +1,7 @@
 @import url(//fonts.googleapis.com/css?family=Montserrat:400|Raleway:300,400,600|Inconsolata);
+.modular.header-image #header #navbar a {
+  color: #000000 !important; }
+
 #header #logo h3, #header #navbar ul.navigation, #header #navbar .panel-activation, #footer p {
   position: relative;
   top: 50%;
@@ -20,7 +23,7 @@ html, body {
 
 body {
   background: #fff;
-  color: #444;
+  color: #585758;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -84,10 +87,10 @@ b, strong, label, th {
     background-color: rgba(255, 255, 255, 0.9) !important;
     box-shadow: 0 0.05rem 1rem rgba(0, 0, 0, 0.15) !important; }
     #header.scrolled #logo h3 {
-      color: #444 !important;
+      color: #585758 !important;
       font-size: 1.6rem !important; }
     #header.scrolled #logo a, #header.scrolled #navbar span {
-      color: #444 !important; }
+      color: #585758 !important; }
     #header.scrolled #navbar a {
       color: #1BB3E9 !important; }
       #header.scrolled #navbar a:hover {
@@ -104,7 +107,7 @@ b, strong, label, th {
       margin: 0;
       text-transform: uppercase; }
       #header #logo h3 a {
-        color: #444; }
+        color: #585758; }
   #header #navbar {
     font-size: 0.9rem; }
     #header #navbar ul {
@@ -567,9 +570,9 @@ td {
           border-bottom: 0; }
       #panel .navigation li.active > a {
         background: #fff;
-        color: #444; }
+        color: #585758; }
         #panel .navigation li.active > a:hover {
-          color: #444; }
+          color: #585758; }
       #panel .navigation li:first-child {
         border-top: 1px solid #3d3d3d; }
       #panel .navigation li ul {
@@ -620,7 +623,7 @@ td {
     .list-item .list-blog-header h4 {
       margin-bottom: 0.5rem; }
       .list-item .list-blog-header h4 a {
-        color: #444; }
+        color: #585758; }
         .list-item .list-blog-header h4 a:hover {
           color: #1BB3E9; }
     .list-item .list-blog-header img {
@@ -734,7 +737,7 @@ ul.pagination {
   margin-top: -2.5rem;
   font-weight: bold;
   font-size: 1rem;
-  color: #777777; }
+  color: #8b8a8b; }
   @media only all and (max-width: 47.938em) {
     .simplesearch .search-details {
       float: none;
@@ -878,38 +881,42 @@ ul.pagination {
   .callout img {
     border-radius: 3px; }
 
-.header {
+.cover {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   width: 100%; }
-  .header h3 {
+  .cover h1 {
+    font-size: 70pt;
+    letter-spacing: initial;
+    margin-left: 7rem; }
+  .cover h3 {
     display: inline-block; }
-    .header h3:first-of-type {
+    .cover h3:first-of-type {
       margin-left: 2rem;
       margin-right: 1.5rem; }
-  .header .modular-row {
+  .cover .modular-row {
     position: absolute;
     top: 50px;
     background: transparent;
     left: 50%; }
-  .header .section-content {
+  .cover .section-content {
     position: relative;
     left: -50%;
-    width: 700px; }
-  .header .header-boxes {
+    width: 750px; }
+  .cover .header-boxes {
     flex-grow: 1;
     flex-shrink: 1;
     height: 100vh;
     width: 100%;
     display: flex;
     flex-flow: row nowrap; }
-  .header .header-box:first-of-type {
+  .cover .header-box:first-of-type {
     background-color: red;
     flex-grow: 1; }
-  .header .header-box:last-of-type {
-    background-color: black;
+  .cover .header-box:last-of-type {
+    background-color: #fff;
     flex-grow: 1; }
 
 .modular .modular-row:last-child {
@@ -917,5 +924,7 @@ ul.pagination {
 
 #body {
   padding-top: 0; }
+  #body * {
+    letter-spacing: initial !important; }
 
 /*# sourceMappingURL=template.css.map */

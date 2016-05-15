@@ -1,10 +1,17 @@
-.header
+.cover
 {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+
+	h1
+	{
+		font-size: 70pt;
+		letter-spacing: initial;
+		margin-left: 7rem;
+	}
 
 	h3
 	{
@@ -29,7 +36,7 @@
 	{
 		position: relative;
 		left: -50%;
-		width: 700px;
+		width: 750px;
 	}
 
 	.header-boxes
@@ -50,7 +57,7 @@
 
 	.header-box:last-of-type
 	{
-		background-color: black;
+		background-color: $white;
 		flex-grow: 1;
 	}
 }

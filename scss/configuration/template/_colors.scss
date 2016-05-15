@@ -1,11 +1,13 @@
 // Core
-$core-text:						#444;
 $core-accent:					#1BB3E9;
 $secondary-link:				#F6635E;
 $white:							#fff;
-$black:							#000;
+$black:							#000000;
+$gray: 							#585758;
 $light-gray:					#ddd;
+$orange: 						#f9402c;
 $border-color: 					#EEEEEE;
+$core-text:						$gray;
 
 // Borders
 $core-border-color:				$light-gray;
@@ -24,7 +26,7 @@ $header-text: 					#FFFFFF;
 
 // Nav
 $navbar-text: 					#75879A;
-$navbar-bg: 					#FFFFFF;
+$navbar-bg: 					transparent;
 
 // Showcase
 $showcase-bg:					lighten($core-accent, 6%);
