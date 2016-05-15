@@ -1,0 +1,29 @@
+.details
+{
+	display: flex;
+	flex-flow: row nowrap;
+
+	.side-box
+	{
+		flex-grow: 1;
+		background: $orange;
+		width: 300px;
+	}
+
+	.modular-row
+	{
+		flex-grow: 4;
+		padding: 4rem;
+	}
+
+	.second-panel-columns
+	{
+		display: flex;
+		flex-flow: row nowrap;
+	}
+
+	.second-panel-column
+	{
+		width: 50%;
+	}
+}

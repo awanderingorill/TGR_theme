@@ -404,7 +404,7 @@ code {
 
 pre {
   padding: 2rem;
-  background: #f6f6f6;
+  background: #ffffff;
   border: 1px solid #ddd;
   border-radius: 3px; }
   pre code {
@@ -859,7 +859,7 @@ ul.pagination {
         text-align: left; }
 
 .callout {
-  background: #f6f6f6;
+  background: #fff;
   padding: 6rem 0.938rem; }
   @media only all and (max-width: 59.938em) {
     .callout {
@@ -913,11 +913,27 @@ ul.pagination {
     display: flex;
     flex-flow: row nowrap; }
   .cover .header-box:first-of-type {
-    background-color: red;
+    background-color: #f9402c;
     flex-grow: 1; }
   .cover .header-box:last-of-type {
     background-color: #fff;
     flex-grow: 1; }
+
+.details {
+  display: flex;
+  flex-flow: row nowrap; }
+  .details .side-box {
+    flex-grow: 1;
+    background: #f9402c;
+    width: 300px; }
+  .details .modular-row {
+    flex-grow: 4;
+    padding: 4rem; }
+  .details .second-panel-columns {
+    display: flex;
+    flex-flow: row nowrap; }
+  .details .second-panel-column {
+    width: 50%; }
 
 .modular .modular-row:last-child {
   margin-bottom: 2rem; }
