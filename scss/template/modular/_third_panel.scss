@@ -1,6 +1,23 @@
-.grav-lightslider h1
+.grav-lightslider
 {
-	color: $gray !important;
+	position: relative;
+	top: -100px;
+
+	*
+	{
+		color: $gray !important;
+		font-family: $font-family-default !important;
+	}
+
+	li.active a
+	{
+		background-color: $orange !important;
+	}
+
+	li a:hover
+	{
+		background-color: $orange !important;
+	}
 }
 
 .services
@@ -29,14 +46,21 @@
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
-    position: relative;
-	bottom: -33px;
 
 	.services-button
 	{
 		flex-grow: 1;
 		text-align: center;
 		padding: 1.5rem;
+		cursor: pointer;
+
+		&:hover
+		{
+			h4
+			{
+				border-bottom: 2px solid $orange;
+			}
+		}
 
 		h4
 		{
@@ -65,14 +89,31 @@
 	background-color: $white;
 	width: 100vw;
 	color: $gray;
+	text-align: center;
 }
 
 .services-callout-panel
 {
 	display: none;
+	text-align: center;
+
+	h2
+	{
+		font-size: 2rem;
+		padding: 6rem;
+		margin: 0 !important;
+	}
 
 	&.active
 	{
 		display: block;
 	}
+}
+
+.leadership
+{
+	.grav-lightslider
+	{
+		display: none;
+	}	
 }

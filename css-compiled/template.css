@@ -944,8 +944,16 @@ ul.pagination {
   .details .second-panel-column {
     width: 50%; }
 
-.grav-lightslider h1 {
-  color: #585758 !important; }
+.grav-lightslider {
+  position: relative;
+  top: -100px; }
+  .grav-lightslider * {
+    color: #585758 !important;
+    font-family: "Avenir", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif !important; }
+  .grav-lightslider li.active a {
+    background-color: #f9402c !important; }
+  .grav-lightslider li a:hover {
+    background-color: #f9402c !important; }
 
 .services {
   color: #fff !important; }
@@ -960,13 +968,14 @@ ul.pagination {
 .services-buttons {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
-  position: relative;
-  bottom: -33px; }
+  justify-content: space-around; }
   .services-buttons .services-button {
     flex-grow: 1;
     text-align: center;
-    padding: 1.5rem; }
+    padding: 1.5rem;
+    cursor: pointer; }
+    .services-buttons .services-button:hover h4 {
+      border-bottom: 2px solid #f9402c; }
     .services-buttons .services-button h4 {
       display: inline-block;
       margin: 1.5rem 0;
@@ -980,12 +989,21 @@ ul.pagination {
 .services-callouts {
   background-color: #fff;
   width: 100vw;
-  color: #585758; }
+  color: #585758;
+  text-align: center; }
 
 .services-callout-panel {
-  display: none; }
+  display: none;
+  text-align: center; }
+  .services-callout-panel h2 {
+    font-size: 2rem;
+    padding: 6rem;
+    margin: 0 !important; }
   .services-callout-panel.active {
     display: block; }
+
+.leadership .grav-lightslider {
+  display: none; }
 
 .modular .modular-row:last-child {
   margin-bottom: 2rem; }
