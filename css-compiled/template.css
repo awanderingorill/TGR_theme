@@ -954,6 +954,8 @@ ul.pagination {
     background-color: #f9402c !important; }
   .grav-lightslider li a:hover {
     background-color: #f9402c !important; }
+  .grav-lightslider h1 strong, .grav-lightslider h1 label, .grav-lightslider h1 th {
+    color: #f9402c !important; }
 
 .services {
   color: #fff !important; }
@@ -998,12 +1000,30 @@ ul.pagination {
   .services-callout-panel h2 {
     font-size: 2rem;
     padding: 6rem;
+    padding-bottom: 3rem;
     margin: 0 !important; }
   .services-callout-panel.active {
     display: block; }
 
 .leadership .grav-lightslider {
   display: none; }
+
+.clients {
+  color: #fff !important; }
+  .clients .modular-row {
+    padding: 6rem;
+    background-color: #f9402c !important; }
+  .clients h1, .clients h2 {
+    text-align: left; }
+  .clients h2 {
+    padding: 3rem 0; }
+  .clients ul {
+    list-style-type: none;
+    padding-left: 0;
+    column-count: 3;
+    column-gap: 5rem; }
+  .clients li {
+    padding-bottom: 1rem; }
 
 .modular .modular-row:last-child {
   margin-bottom: 2rem; }

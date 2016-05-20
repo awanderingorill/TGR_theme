@@ -1,0 +1,33 @@
+.clients
+{
+	color: $white !important;
+
+	.modular-row
+	{
+		padding: 6rem;
+		background-color: $orange !important;
+	}
+
+	h1, h2
+	{
+		text-align: left;
+	}
+
+	h2
+	{
+		padding: 3rem 0;
+	}
+
+	ul
+	{
+		list-style-type: none;
+		padding-left: 0;
+		column-count: 3;
+		column-gap: 5rem;
+	}
+
+	li
+	{
+		padding-bottom: 1rem;
+	}
+}

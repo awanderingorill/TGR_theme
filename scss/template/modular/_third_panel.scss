@@ -18,6 +18,11 @@
 	{
 		background-color: $orange !important;
 	}
+
+	h1 strong
+	{
+		color: $orange !important;
+	}
 }
 
 .services
@@ -101,6 +106,7 @@
 	{
 		font-size: 2rem;
 		padding: 6rem;
+		padding-bottom: 3rem;
 		margin: 0 !important;
 	}
 
