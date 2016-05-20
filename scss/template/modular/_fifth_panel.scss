@@ -1,0 +1,46 @@
+.about
+{
+	display: flex;
+	flex-flow: row nowrap;
+    position: relative;
+	top: -2rem;
+
+	.side-box
+	{
+		flex-grow: 1;
+		width: 150px;
+		background: $orange;
+	}
+
+	h1
+	{
+		text-align: left;
+	}
+
+	h4
+	{
+		text-align: center;
+
+		+ p
+		{
+			text-align: center;
+		}
+	}
+
+	.modular-row
+	{
+		padding: 6rem;
+		flex-grow: 4;
+	}
+
+	ul
+	{
+		list-style-type: none;
+		padding-left: 0;
+	}
+
+	li
+	{
+		margin-bottom: 1.5rem;
+	}
+}

@@ -944,19 +944,6 @@ ul.pagination {
   .details .second-panel-column {
     width: 50%; }
 
-.grav-lightslider {
-  position: relative;
-  top: -100px; }
-  .grav-lightslider * {
-    color: #585758 !important;
-    font-family: "Avenir", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif !important; }
-  .grav-lightslider li.active a {
-    background-color: #f9402c !important; }
-  .grav-lightslider li a:hover {
-    background-color: #f9402c !important; }
-  .grav-lightslider h1 strong, .grav-lightslider h1 label, .grav-lightslider h1 th {
-    color: #f9402c !important; }
-
 .services {
   color: #fff !important; }
   .services .modular-row {
@@ -965,7 +952,15 @@ ul.pagination {
     text-align: right; }
   .services .callout {
     padding: 0;
-    padding-top: 6rem; }
+    padding-top: 6rem;
+    padding-right: 6rem; }
+  .services h2:first-of-type {
+    text-align: right;
+    padding: 2rem 0; }
+  .services ul {
+    padding-bottom: 6rem; }
+  .services h2, .services ul {
+    padding-left: 6rem; }
 
 .services-buttons {
   display: flex;
@@ -991,8 +986,9 @@ ul.pagination {
 .services-callouts {
   background-color: #fff;
   width: 100vw;
-  color: #585758;
-  text-align: center; }
+  color: #585758; }
+  .services-callouts h4 {
+    text-align: center !important; }
 
 .services-callout-panel {
   display: none;
@@ -1001,12 +997,26 @@ ul.pagination {
     font-size: 2rem;
     padding: 6rem;
     padding-bottom: 3rem;
-    margin: 0 !important; }
+    margin: 0 !important;
+    text-align: center !important; }
   .services-callout-panel.active {
     display: block; }
 
 .leadership .grav-lightslider {
   display: none; }
+
+.grav-lightslider {
+  position: relative;
+  top: -100px; }
+  .grav-lightslider * {
+    color: #585758 !important;
+    font-family: "Avenir", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif !important; }
+  .grav-lightslider li.active a {
+    background-color: #f9402c !important; }
+  .grav-lightslider li a:hover {
+    background-color: #f9402c !important; }
+  .grav-lightslider h1 strong, .grav-lightslider h1 label, .grav-lightslider h1 th {
+    color: #f9402c !important; }
 
 .clients {
   color: #fff !important; }
@@ -1023,7 +1033,52 @@ ul.pagination {
     column-count: 3;
     column-gap: 5rem; }
   .clients li {
-    padding-bottom: 1rem; }
+    padding-bottom: 0.5rem; }
+
+.about {
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+  top: -2rem; }
+  .about .side-box {
+    flex-grow: 1;
+    width: 150px;
+    background: #f9402c; }
+  .about h1 {
+    text-align: left; }
+  .about h4 {
+    text-align: center; }
+    .about h4 + p {
+      text-align: center; }
+  .about .modular-row {
+    padding: 6rem;
+    flex-grow: 4; }
+  .about ul {
+    list-style-type: none;
+    padding-left: 0; }
+  .about li {
+    margin-bottom: 1.5rem; }
+
+.contact {
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+  top: -2rem; }
+  .contact .side-box {
+    flex-grow: 1; }
+  .contact .modular-row {
+    flex-grow: 6;
+    background-color: #585758;
+    color: #fff;
+    margin-bottom: 0 !important;
+    padding: 6rem; }
+  .contact ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center; }
+
+section {
+  padding-bottom: 0 !important; }
 
 .modular .modular-row:last-child {
   margin-bottom: 2rem; }

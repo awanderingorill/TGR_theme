@@ -1,0 +1,33 @@
+.contact
+{
+	display: flex;
+	flex-flow: row nowrap;
+	position: relative;
+	top: -2rem;
+
+	.side-box
+	{
+		flex-grow: 1;
+	}
+
+	.modular-row
+	{
+		flex-grow: 6;
+		background-color: $gray;
+		color: $white;
+		margin-bottom: 0 !important;
+		padding: 6rem;
+	}
+
+	ul
+	{
+		list-style-type: none;
+		padding-left: 0;
+		text-align: center;
+	}
+}
+
+section
+{
+	padding-bottom: 0 !important;
+}
