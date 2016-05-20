@@ -1,0 +1,78 @@
+.grav-lightslider h1
+{
+	color: $gray !important;
+}
+
+.services
+{
+	color: $white !important;
+
+	.modular-row
+	{
+		background-color: $gray !important;
+	}
+
+	h1
+	{
+		text-align: right;
+	}
+
+	.callout
+	{
+		padding: 0;
+		padding-top: 6rem;
+	}
+}
+
+.services-buttons
+{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+    position: relative;
+	bottom: -33px;
+
+	.services-button
+	{
+		flex-grow: 1;
+		text-align: center;
+		padding: 1.5rem;
+
+		h4
+		{
+			display: inline-block;
+			margin: 1.5rem 0;
+			text-transform: uppercase;
+		}
+
+		&.active
+		{
+			background-color: $white;
+			color: $gray;
+
+			h4
+			{
+				border-bottom: 2px solid $orange;
+			}
+		}
+
+	}
+
+}
+
+.services-callouts
+{
+	background-color: $white;
+	width: 100vw;
+	color: $gray;
+}
+
+.services-callout-panel
+{
+	display: none;
+
+	&.active
+	{
+		display: block;
+	}
+}

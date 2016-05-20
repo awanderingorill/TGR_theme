@@ -264,25 +264,29 @@ html, body, button, input, select, textarea, .pure-g, .pure-g [class*="pure-u"] 
   font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Didot", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "Avenir", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
   letter-spacing: -0px; }
 
 h1 {
-  font-size: 3.2rem; }
+  font-size: 30pt;
+  font-family: "Avenir", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 700; }
   @media only all and (max-width: 47.938em) {
     h1 {
       font-size: 2.5rem;
       line-height: 1.2;
       margin-bottom: 2.5rem; } }
 
-@media only all and (min-width: 48em) and (max-width: 59.938em) {
-  h2 {
-    font-size: 2.1rem; } }
-@media only all and (max-width: 47.938em) {
-  h2 {
-    font-size: 2rem; } }
+h2 {
+  font-family: "Didot", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; }
+  @media only all and (min-width: 48em) and (max-width: 59.938em) {
+    h2 {
+      font-size: 2.1rem; } }
+  @media only all and (max-width: 47.938em) {
+    h2 {
+      font-size: 2rem; } }
 
 @media only all and (min-width: 48em) and (max-width: 59.938em) {
   h3 {
@@ -291,12 +295,14 @@ h1 {
   h3 {
     font-size: 1.6rem; } }
 
-@media only all and (min-width: 48em) and (max-width: 59.938em) {
-  h4 {
-    font-size: 1.35rem; } }
-@media only all and (max-width: 47.938em) {
-  h4 {
-    font-size: 1.25rem; } }
+h4 {
+  font-weight: 700; }
+  @media only all and (min-width: 48em) and (max-width: 59.938em) {
+    h4 {
+      font-size: 0.6rem; } }
+  @media only all and (max-width: 47.938em) {
+    h4 {
+      font-size: 0.5rem; } }
 
 h1 {
   text-align: center;
@@ -313,7 +319,7 @@ h1 + h2 {
   font-size: 2rem;
   line-height: 1;
   text-align: center;
-  font-family: "Avenir", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "Didot", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 300; }
   @media only all and (min-width: 48em) and (max-width: 59.938em) {
     h1 + h2 {
@@ -912,6 +918,9 @@ ul.pagination {
     width: 100%;
     display: flex;
     flex-flow: row nowrap; }
+  .cover h1, .cover h2, .cover h3, .cover h4, .cover h5, .cover h6 {
+    font-family: "Didot", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif !important;
+    font-weight: 300; }
   .cover .header-box:first-of-type {
     background-color: #f9402c;
     flex-grow: 1; }
@@ -934,6 +943,49 @@ ul.pagination {
     flex-flow: row nowrap; }
   .details .second-panel-column {
     width: 50%; }
+
+.grav-lightslider h1 {
+  color: #585758 !important; }
+
+.services {
+  color: #fff !important; }
+  .services .modular-row {
+    background-color: #585758 !important; }
+  .services h1 {
+    text-align: right; }
+  .services .callout {
+    padding: 0;
+    padding-top: 6rem; }
+
+.services-buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  position: relative;
+  bottom: -33px; }
+  .services-buttons .services-button {
+    flex-grow: 1;
+    text-align: center;
+    padding: 1.5rem; }
+    .services-buttons .services-button h4 {
+      display: inline-block;
+      margin: 1.5rem 0;
+      text-transform: uppercase; }
+    .services-buttons .services-button.active {
+      background-color: #fff;
+      color: #585758; }
+      .services-buttons .services-button.active h4 {
+        border-bottom: 2px solid #f9402c; }
+
+.services-callouts {
+  background-color: #fff;
+  width: 100vw;
+  color: #585758; }
+
+.services-callout-panel {
+  display: none; }
+  .services-callout-panel.active {
+    display: block; }
 
 .modular .modular-row:last-child {
   margin-bottom: 2rem; }

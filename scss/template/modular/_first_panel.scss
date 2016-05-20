@@ -49,6 +49,12 @@
 		flex-flow: row nowrap;
 	}
 
+	h1, h2, h3, h4, h5, h6
+	{
+		font-family: $font-family-header !important;
+		font-weight: 300;
+	}
+
 	.header-box:first-of-type
 	{
 		background-color: $orange;
