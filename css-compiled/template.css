@@ -272,7 +272,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 30pt;
   font-family: "Avenir", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-  font-weight: 700; }
+  font-weight: 600; }
   @media only all and (max-width: 47.938em) {
     h1 {
       font-size: 2.5rem;
@@ -943,6 +943,8 @@ ul.pagination {
     flex-flow: row nowrap; }
   .details .second-panel-column {
     width: 50%; }
+  .details h4 {
+    text-align: center; }
 
 .services {
   color: #fff !important; }
@@ -956,7 +958,7 @@ ul.pagination {
     padding-top: 6rem; }
   .services h2:first-of-type {
     text-align: right;
-    padding: 2rem 6rem; }
+    padding: 4rem 6rem; }
   .services ul {
     padding-bottom: 6rem; }
   .services h2, .services ul {
@@ -1002,12 +1004,10 @@ ul.pagination {
   .services-callout-panel.active {
     display: block; }
 
-.leadership .grav-lightslider {
-  display: none; }
-
 .grav-lightslider {
   position: relative;
-  top: -100px; }
+  top: 0;
+  padding-bottom: 100px; }
   .grav-lightslider * {
     color: #585758 !important;
     font-family: "Avenir", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif !important; }
@@ -1015,8 +1015,11 @@ ul.pagination {
     background-color: #f9402c !important; }
   .grav-lightslider li a:hover {
     background-color: #f9402c !important; }
+  .grav-lightslider h1 {
+    font-weight: 300; }
   .grav-lightslider h1 strong, .grav-lightslider h1 label, .grav-lightslider h1 th {
-    color: #f9402c !important; }
+    color: #f9402c !important;
+    font-weight: 700; }
 
 .clients {
   color: #fff !important; }

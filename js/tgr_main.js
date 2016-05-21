@@ -1,7 +1,15 @@
 $(document).ready(function()
 {
+	$('.leadership .grav-lightslider').css('visibility', 'hidden');
+
+	setTimeout(function()
+	{
+		$('.leadership .grav-lightslider').hide();
+	}, 500)
+
 	$('.services-button').click(function()
 	{
+		// Handle button and callout quote hide/show
 		if (!$(this).hasClass('active'))
 		{
 			// Grab inactive quote before removing 'active' from active one
@@ -14,6 +22,19 @@ $(document).ready(function()
 			inactiveQuote.addClass('active');
 			// Highlight appropriate button
 			$(this).addClass('active');
+		}
+
+		// Handle lightslider hide/show
+		if ($('.services-button.active h4').hasClass('leadership'))
+		{
+			$('.strategy .grav-lightslider').hide();
+			$('.leadership .grav-lightslider').css('visibility', 'visible');
+			$('.leadership .grav-lightslider').show();
+		}
+		else
+		{
+			$('.leadership .grav-lightslider').hide();
+			$('.strategy .grav-lightslider').show();
 		}
 	})
 })

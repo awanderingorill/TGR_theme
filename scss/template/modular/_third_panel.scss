@@ -22,7 +22,7 @@
 	h2:first-of-type
 	{
 		text-align: right;
-		padding: 2rem 6rem;
+		padding: 4rem 6rem;
 	}
 
 	ul
@@ -111,18 +111,11 @@
 	}
 }
 
-.leadership
-{
-	.grav-lightslider
-	{
-		display: none;
-	}	
-}
-
 .grav-lightslider
 {
 	position: relative;
-	top: -100px;
+	top: 0;
+	padding-bottom: 100px;
 
 	*
 	{
@@ -140,9 +133,15 @@
 		background-color: $orange !important;
 	}
 
+	h1
+	{
+		font-weight: 300;
+	}
+
 	h1 strong
 	{
 		color: $orange !important;
+		font-weight: 700;
 	}
 }
 
