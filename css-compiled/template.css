@@ -949,14 +949,14 @@ ul.pagination {
   .services .modular-row {
     background-color: #585758 !important; }
   .services h1 {
-    text-align: right; }
+    text-align: right;
+    padding-right: 6rem; }
   .services .callout {
     padding: 0;
-    padding-top: 6rem;
-    padding-right: 6rem; }
+    padding-top: 6rem; }
   .services h2:first-of-type {
     text-align: right;
-    padding: 2rem 0; }
+    padding: 2rem 6rem; }
   .services ul {
     padding-bottom: 6rem; }
   .services h2, .services ul {
