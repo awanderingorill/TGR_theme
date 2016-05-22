@@ -1008,7 +1008,8 @@ ul.pagination {
     position: absolute;
     transform: rotate(50deg);
     top: 920px;
-    right: 90px; }
+    right: 90px;
+    opacity: 0.5; }
 
 .services-callout-panel {
   display: none;
@@ -1040,10 +1041,12 @@ ul.pagination {
     font-weight: 700; }
 
 .lSAction > .lSNext {
-  background-position: -35px 0 !important; }
+  background-position: -35px 0 !important;
+  right: 10% !important; }
 
 .lSAction > .lSPrev {
-  background-position: 0px 2px !important; }
+  background-position: 0px 2px !important;
+  left: 10% !important; }
 
 .lSAction > a {
   opacity: 1 !important; }
