@@ -5,6 +5,7 @@
 	.modular-row
 	{
 		background-color: $gray !important;
+		position: relative;
 	}
 
 	h1
@@ -89,6 +90,19 @@
 	{
 		text-align: center !important;
 	}
+
+	&:after
+	{
+		display: block;
+		content: '';
+		height: 300px;
+		width: 300px;
+		background: url('../images/glasses.svg') no-repeat center center;
+		position: absolute;
+		transform: rotate(50deg);
+		top: 920px;
+		right: 90px;
+	}
 }
 
 .services-callout-panel
@@ -145,3 +159,17 @@
 	}
 }
 
+.lSAction > .lSNext
+{
+	background-position: -35px 0 !important;
+}
+
+.lSAction > .lSPrev
+{
+	background-position: 0px 2px !important;
+}
+
+.lSAction > a
+{
+	opacity: 1 !important;
+}

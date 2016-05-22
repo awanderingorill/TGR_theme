@@ -956,7 +956,8 @@ ul.pagination {
 .services {
   color: #fff !important; }
   .services .modular-row {
-    background-color: #585758 !important; }
+    background-color: #585758 !important;
+    position: relative; }
   .services h1 {
     text-align: right;
     padding-right: 6rem; }
@@ -998,6 +999,16 @@ ul.pagination {
   color: #585758; }
   .services-callouts h4 {
     text-align: center !important; }
+  .services-callouts:after {
+    display: block;
+    content: '';
+    height: 300px;
+    width: 300px;
+    background: url("../images/glasses.svg") no-repeat center center;
+    position: absolute;
+    transform: rotate(50deg);
+    top: 920px;
+    right: 90px; }
 
 .services-callout-panel {
   display: none;
@@ -1027,6 +1038,15 @@ ul.pagination {
   .grav-lightslider h1 strong, .grav-lightslider h1 label, .grav-lightslider h1 th {
     color: #f9402c !important;
     font-weight: 700; }
+
+.lSAction > .lSNext {
+  background-position: -35px 0 !important; }
+
+.lSAction > .lSPrev {
+  background-position: 0px 2px !important; }
+
+.lSAction > a {
+  opacity: 1 !important; }
 
 .clients {
   color: #fff !important; }
