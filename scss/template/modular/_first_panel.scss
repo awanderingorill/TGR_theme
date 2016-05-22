@@ -11,6 +11,19 @@
 		font-size: 70pt;
 		letter-spacing: initial;
 		margin-left: 7rem;
+
+		&:after
+		{
+			display: block;
+			content: '';
+			height: 300px;
+			width: 300px;
+			background: url('../images/glasses.svg') no-repeat center center;
+			position: absolute;
+			transform: rotate(50deg);
+			top: -53px;
+			right: -125px;
+		}
 	}
 
 	h3

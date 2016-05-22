@@ -11,9 +11,9 @@ body {
 
 a {
 	color: $core-accent;
-	&:hover {
-		color: darken($core-accent, 20%);
-	}
+	// &:hover {
+	// 	color: darken($core-accent, 20%);
+	// }
 }
 
 b, strong {

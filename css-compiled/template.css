@@ -28,9 +28,7 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 a {
-  color: #1BB3E9; }
-  a:hover {
-    color: #0e6e90; }
+  color: #f9402c; }
 
 b, strong, label, th {
   font-weight: 600; }
@@ -92,11 +90,11 @@ b, strong, label, th {
     #header.scrolled #logo a, #header.scrolled #navbar span {
       color: #585758 !important; }
     #header.scrolled #navbar a {
-      color: #1BB3E9 !important; }
-      #header.scrolled #navbar a:hover {
-        color: #0e6e90 !important; }
+      color: #f9402c !important; }
     #header.scrolled #navbar a:before, #header.scrolled #navbar a:after {
-      background-color: #1BB3E9 !important; }
+      background-color: #f9402c !important; }
+    #header.scrolled #navbar ul.navigation {
+      justify-content: flex-end; }
   #header > .grid, #header #logo, #header #navbar {
     height: 100%; }
   #header #logo {
@@ -115,13 +113,14 @@ b, strong, label, th {
       padding: 0;
       list-style: none; }
       #header #navbar ul.navigation {
-        display: inline-block;
-        float: right; }
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center; }
         #header #navbar ul.navigation li {
           float: left;
           position: relative; }
           #header #navbar ul.navigation li a {
-            font-family: "Didot", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+            font-family: "Avenir", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
             display: inline-block;
             padding: 0.3rem 0.8rem; }
             #header #navbar ul.navigation li a:before, #header #navbar ul.navigation li a:after {
@@ -131,7 +130,7 @@ b, strong, label, th {
               height: 1px;
               bottom: 0;
               left: 0;
-              background-color: #1BB3E9;
+              background-color: #f9402c;
               visibility: hidden;
               -webkit-transform: scaleX(0);
               -moz-transform: scaleX(0);
@@ -186,7 +185,7 @@ b, strong, label, th {
               #header #navbar ul.navigation li:hover li a:before, #header #navbar ul.navigation li:hover li a:after {
                 display: none; }
             #header #navbar ul.navigation li:hover li.active > a {
-              background: #1BB3E9;
+              background: #f9402c;
               color: #fff; }
         @media only all and (max-width: 59.938em) {
           #header #navbar ul.navigation {
@@ -224,9 +223,7 @@ b, strong, label, th {
   .header-image #header a:before, .header-image #header a:after {
     background-color: rgba(255, 255, 255, 0.7) !important; }
   .header-image #header #navbar ul.navigation ul li a {
-    color: #1BB3E9; }
-    .header-image #header #navbar ul.navigation ul li a:hover {
-      color: #0e6e90; }
+    color: #f9402c; }
 
 #footer {
   position: absolute;
@@ -425,12 +422,12 @@ hr {
   padding: 25px;
   float: left;
   clear: both;
-  background: #1BB3E9;
+  background: #f9402c;
   color: #fff; }
 
 .label {
   vertical-align: middle;
-  background: #1BB3E9;
+  background: #f9402c;
   border-radius: 100%;
   color: #fff;
   height: 1rem;
@@ -452,8 +449,8 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
   textarea:hover, input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover, select[multiple=multiple]:hover {
     border-color: #c4c4c4; }
   textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus {
-    border-color: #1BB3E9;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(21, 163, 214, 0.7); }
+    border-color: #f9402c;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(248, 42, 19, 0.7); }
 
 .form-field .required {
   color: #F3443F;
@@ -482,14 +479,14 @@ td {
 
 .button {
   background: #fff;
-  color: #1BB3E9;
-  border: 1px solid #1BB3E9;
+  color: #f9402c;
+  border: 1px solid #f9402c;
   border-radius: 3px; }
   .button:hover {
-    background: #1BB3E9;
+    background: #f9402c;
     color: #fff; }
   .button:active {
-    box-shadow: 0 1px 0 #118ab5; }
+    box-shadow: 0 1px 0 #e11c06; }
 
 .button-secondary {
   background: #fff;
@@ -532,7 +529,7 @@ td {
 
 .bullet-icon {
   float: left;
-  background: #1BB3E9;
+  background: #f9402c;
   padding: 0.875rem;
   width: 3.5rem;
   height: 3.5rem;
@@ -542,13 +539,13 @@ td {
   text-align: center; }
 
 .bullet-icon-1 {
-  background: #1BB3E9; }
+  background: #f9402c; }
 
 .bullet-icon-2 {
-  background: #1be9da; }
+  background: #f92c5c; }
 
 .bullet-icon-3 {
-  background: #d5e91b; }
+  background: #2c3af9; }
 
 .bullet-content {
   margin-left: 4.55rem; }
@@ -631,7 +628,7 @@ td {
       .list-item .list-blog-header h4 a {
         color: #585758; }
         .list-item .list-blog-header h4 a:hover {
-          color: #1BB3E9; }
+          color: #f9402c; }
     .list-item .list-blog-header img {
       display: block;
       margin-top: 1rem;
@@ -656,7 +653,7 @@ td {
 .tags a {
   display: inline-block;
   font-size: 0.8rem;
-  border: 1px solid #1BB3E9;
+  border: 1px solid #f9402c;
   border-radius: 3px;
   padding: 0.1rem 0.4rem;
   margin-bottom: 0.2rem;
@@ -834,7 +831,7 @@ ul.pagination {
         width: 100%; } }
     .modular .features .feature i.fa {
       font-size: 2rem;
-      color: #1BB3E9; }
+      color: #f9402c; }
     .modular .features .feature h4 {
       margin: 0;
       font-size: 1.1rem; }
@@ -897,6 +894,16 @@ ul.pagination {
     font-size: 70pt;
     letter-spacing: initial;
     margin-left: 7rem; }
+    .cover h1:after {
+      display: block;
+      content: '';
+      height: 300px;
+      width: 300px;
+      background: url("../images/glasses.svg") no-repeat center center;
+      position: absolute;
+      transform: rotate(50deg);
+      top: -53px;
+      right: -125px; }
   .cover h3 {
     display: inline-block; }
     .cover h3:first-of-type {

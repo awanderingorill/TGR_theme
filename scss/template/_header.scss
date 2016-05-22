@@ -25,12 +25,16 @@
 		}
 		#navbar a {
 			color: $core-accent !important;
-            &:hover {
-                color: darken($core-accent, 20%) !important;
-            }
+            // &:hover {
+            //     color: darken($core-accent, 20%) !important;
+            // }
 		}
 		#navbar a:before, #navbar a:after {
 			background-color: $core-accent !important;
+		}
+		#navbar ul.navigation
+		{
+			justify-content: flex-end;
 		}
 	}
 
@@ -64,15 +68,15 @@
 
 			&.navigation {
 				@extend %vertical-align;
-				display: inline-block;
-				
-				float: right;
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: center;
 				li {
 					float: left;
 					position: relative;
 
 					a {
-						font-family: $font-family-header;
+						font-family: $font-family-default;
 						display: inline-block;
 						padding: 0.3rem 0.8rem;
 
@@ -222,9 +226,9 @@
             ul li a {
 
                 color: $core-accent;
-                &:hover {
-                    color: darken($core-accent, 20%);
-                }
+                // &:hover {
+                //     color: darken($core-accent, 20%);
+                // }
             }
         }
     }
