@@ -16,6 +16,9 @@
   width: device-width; }
 @viewport {
   width: device-width; }
+* {
+  line-height: 1.7 !important; }
+
 html {
   font-size: 100%;
   -ms-text-size-adjust: 100%;

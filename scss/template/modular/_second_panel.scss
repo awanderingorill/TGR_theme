@@ -1,5 +1,12 @@
 .details
 {
+	@include respond-to('small')
+	{
+		h2
+		{
+			font-size: 1.5rem;
+		}
+	}
 	display: flex;
 	flex-flow: row nowrap;
 
@@ -14,21 +21,41 @@
 	{
 		flex-grow: 4;
 		padding: 4rem;
+
+		@include respond-to('small')
+		{
+			padding: 1rem;
+		}
 	}
 
 	.second-panel-columns
 	{
 		display: flex;
 		flex-flow: row nowrap;
+
+		@include respond-to('small')
+		{
+			flex-flow: column;
+		}
 	}
 
 	.second-panel-column
 	{
 		width: 50%;
+
+		@include respond-to('small')
+		{
+			width: 100%;
+		}
 	}
 
 	h4
 	{
 		text-align: center;
+
+		@include respond-to('small')
+		{
+			font-size: 1rem;
+		}
 	}
 }

@@ -6,6 +6,11 @@
 	{
 		padding: 6rem;
 		background-color: $orange !important;
+
+		@include respond-to('small')
+		{
+			padding: 2rem;
+		}
 	}
 
 	h1, h2
@@ -16,6 +21,11 @@
 	h2
 	{
 		padding: 3rem 0;
+
+		@include respond-to('small')
+		{
+			padding: 1rem 0;
+		}
 	}
 
 	ul
@@ -24,6 +34,13 @@
 		padding-left: 0;
 		column-count: 3;
 		column-gap: 5rem;
+
+		@include respond-to('small')
+		{
+			column-count: 2;
+			column-gap: 10px;
+			text-align: left;
+		}
 	}
 
 	li

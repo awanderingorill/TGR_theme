@@ -8,6 +8,11 @@
 @-o-viewport{width:device-width}
 @viewport{width:device-width}
 
+*
+{
+	line-height: $core-line-height !important;
+}
+
 html {
 	font-size: 100%;
 	-ms-text-size-adjust: 100%;

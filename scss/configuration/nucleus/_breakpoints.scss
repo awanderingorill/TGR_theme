@@ -14,3 +14,38 @@ $large-mobile-range: "#{$media} and (min-width:#{$large-mobile-container + 0.063
 $tablet-range: "#{$media} and (min-width:#{$tablet-container}) and (max-width:#{$desktop-container - 0.062})" !default;
 $desktop-range: "#{$media} and (min-width:#{$desktop-container}) and (max-width:#{$large-desktop-container - 0.062})" !default;
 $large-desktop-range: "#{$media} and (min-width:#{$large-desktop-container})" !default;
+
+@mixin respond-to( $breakpoint )
+{
+	@if $breakpoint == 'small'
+	{
+		@media ( max-width: 450px )
+		{
+			@content;
+		}
+	}
+
+	@else if $breakpoint == 'medium'
+	{
+		@media ( max-width: 768px )
+		{
+			@content;
+		}
+	}
+
+	@else if $breakpoint == 'medium-large'
+	{
+		@media ( max-width: 1200px )
+		{
+			@content;
+		}
+	}
+
+	@else if $breakpoint == 'large'
+	{
+		@media ( max-width: 1440px )
+		{
+			@content;
+		}
+	}
+}

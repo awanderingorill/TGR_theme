@@ -12,23 +12,50 @@
 	{
 		text-align: right;
 		padding-right: 6rem;
+
+		@include respond-to('small')
+		{
+			padding-right: 2rem;
+			margin-bottom: 0;
+		}
 	}
 
 	.callout
 	{
 		padding: 0;
 		padding-top: 6rem;
+
+		@include respond-to('small')
+		{
+			padding-top: 2rem;
+		}
 	}
 
 	h2:first-of-type
 	{
 		text-align: right;
 		padding: 4rem 6rem;
+
+		@include respond-to('small')
+		{
+			padding: 1rem 2rem;
+			padding-top: 2rem;
+			margin: 0;
+		}
 	}
 
 	ul
 	{
 		padding-bottom: 6rem;
+
+		@include respond-to('small')
+		{
+			padding: 2rem !important;
+			margin: 0;
+			margin-bottom: 2rem;
+			margin-left: 1rem;
+			text-align: left;
+		}
 	}
 
 	h2, ul
@@ -49,6 +76,11 @@
 		text-align: center;
 		padding: 1.5rem;
 		cursor: pointer;
+
+		@include respond-to('small')
+		{
+			padding: 0;
+		}
 
 		&:hover
 		{
@@ -118,6 +150,11 @@
 		padding-bottom: 3rem;
 		margin: 0 !important;
 		text-align: center !important;
+
+		@include respond-to('small')
+		{
+			font-size: 1.5rem;
+		}
 	}
 
 	&.active
@@ -151,6 +188,11 @@
 	h1
 	{
 		font-weight: 300;
+
+		@include respond-to('small')
+		{
+			font-size: 1.5rem !important;
+		}
 	}
 
 	h1 strong
@@ -175,4 +217,9 @@
 .lSAction > a
 {
 	opacity: 1 !important;
+
+	@include respond-to('small')
+	{
+		background-image: initial !important;
+	}
 }

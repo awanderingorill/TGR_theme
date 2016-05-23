@@ -894,6 +894,10 @@ ul.pagination {
     font-size: 70pt;
     letter-spacing: initial;
     margin-left: 7rem; }
+    @media (max-width: 450px) {
+      .cover h1 {
+        font-size: 30pt;
+        margin-left: 2rem; } }
     .cover h1:after {
       display: block;
       content: '';
@@ -906,9 +910,17 @@ ul.pagination {
       right: -125px; }
   .cover h3 {
     display: inline-block; }
+    @media (max-width: 450px) {
+      .cover h3 {
+        font-weight: 700 !important;
+        font-size: 1rem; } }
     .cover h3:first-of-type {
       margin-left: 2rem;
       margin-right: 1.5rem; }
+      @media (max-width: 450px) {
+        .cover h3:first-of-type {
+          margin-left: -23px;
+          margin-right: 0.5rem; } }
   .cover .modular-row {
     position: absolute;
     top: 50px;
@@ -938,6 +950,9 @@ ul.pagination {
 .details {
   display: flex;
   flex-flow: row nowrap; }
+  @media (max-width: 450px) {
+    .details h2 {
+      font-size: 1.5rem; } }
   .details .side-box {
     flex-grow: 1;
     background: #f9402c;
@@ -945,13 +960,25 @@ ul.pagination {
   .details .modular-row {
     flex-grow: 4;
     padding: 4rem; }
+    @media (max-width: 450px) {
+      .details .modular-row {
+        padding: 1rem; } }
   .details .second-panel-columns {
     display: flex;
     flex-flow: row nowrap; }
+    @media (max-width: 450px) {
+      .details .second-panel-columns {
+        flex-flow: column; } }
   .details .second-panel-column {
     width: 50%; }
+    @media (max-width: 450px) {
+      .details .second-panel-column {
+        width: 100%; } }
   .details h4 {
     text-align: center; }
+    @media (max-width: 450px) {
+      .details h4 {
+        font-size: 1rem; } }
 
 .services {
   color: #fff !important; }
@@ -961,14 +988,33 @@ ul.pagination {
   .services h1 {
     text-align: right;
     padding-right: 6rem; }
+    @media (max-width: 450px) {
+      .services h1 {
+        padding-right: 2rem;
+        margin-bottom: 0; } }
   .services .callout {
     padding: 0;
     padding-top: 6rem; }
+    @media (max-width: 450px) {
+      .services .callout {
+        padding-top: 2rem; } }
   .services h2:first-of-type {
     text-align: right;
     padding: 4rem 6rem; }
+    @media (max-width: 450px) {
+      .services h2:first-of-type {
+        padding: 1rem 2rem;
+        padding-top: 2rem;
+        margin: 0; } }
   .services ul {
     padding-bottom: 6rem; }
+    @media (max-width: 450px) {
+      .services ul {
+        padding: 2rem !important;
+        margin: 0;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        text-align: left; } }
   .services h2, .services ul {
     padding-left: 6rem; }
 
@@ -981,6 +1027,9 @@ ul.pagination {
     text-align: center;
     padding: 1.5rem;
     cursor: pointer; }
+    @media (max-width: 450px) {
+      .services-buttons .services-button {
+        padding: 0; } }
     .services-buttons .services-button:hover h4 {
       border-bottom: 2px solid #f9402c; }
     .services-buttons .services-button h4 {
@@ -1020,6 +1069,9 @@ ul.pagination {
     padding-bottom: 3rem;
     margin: 0 !important;
     text-align: center !important; }
+    @media (max-width: 450px) {
+      .services-callout-panel h2 {
+        font-size: 1.5rem; } }
   .services-callout-panel.active {
     display: block; }
 
@@ -1036,6 +1088,9 @@ ul.pagination {
     background-color: #f9402c !important; }
   .grav-lightslider h1 {
     font-weight: 300; }
+    @media (max-width: 450px) {
+      .grav-lightslider h1 {
+        font-size: 1.5rem !important; } }
   .grav-lightslider h1 strong, .grav-lightslider h1 label, .grav-lightslider h1 th {
     color: #f9402c !important;
     font-weight: 700; }
@@ -1050,21 +1105,35 @@ ul.pagination {
 
 .lSAction > a {
   opacity: 1 !important; }
+  @media (max-width: 450px) {
+    .lSAction > a {
+      background-image: initial !important; } }
 
 .clients {
   color: #fff !important; }
   .clients .modular-row {
     padding: 6rem;
     background-color: #f9402c !important; }
+    @media (max-width: 450px) {
+      .clients .modular-row {
+        padding: 2rem; } }
   .clients h1, .clients h2 {
     text-align: left; }
   .clients h2 {
     padding: 3rem 0; }
+    @media (max-width: 450px) {
+      .clients h2 {
+        padding: 1rem 0; } }
   .clients ul {
     list-style-type: none;
     padding-left: 0;
     column-count: 3;
     column-gap: 5rem; }
+    @media (max-width: 450px) {
+      .clients ul {
+        column-count: 2;
+        column-gap: 10px;
+        text-align: left; } }
   .clients li {
     padding-bottom: 0.5rem; }
 

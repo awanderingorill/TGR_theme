@@ -36,5 +36,13 @@ $(document).ready(function()
 			$('.leadership .grav-lightslider').hide();
 			$('.strategy .grav-lightslider').show();
 		}
-	})
+	});
+
+	// Lightslider mobile padding adjustment
+	var width = $(window).width();
+	if (width <= 500)
+	{
+		console.log('mobile');
+		$('.panel-padding').css('padding', '0px 15px');
+	}
 })

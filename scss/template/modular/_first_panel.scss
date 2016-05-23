@@ -12,6 +12,12 @@
 		letter-spacing: initial;
 		margin-left: 7rem;
 
+		@include respond-to('small')
+		{
+			font-size: 30pt;
+			margin-left: 2rem;
+		}
+
 		&:after
 		{
 			display: block;
@@ -30,10 +36,22 @@
 	{
 		display: inline-block;
 
+		@include respond-to('small')
+		{
+			font-weight: 700 !important;
+			font-size: 1rem;
+		}
+
 		&:first-of-type
 		{
 			margin-left: 2rem;
 			margin-right: 1.5rem;
+
+			@include respond-to('small')
+			{
+				margin-left: -23px;
+				margin-right: 0.5rem;
+			}
 		}
 	}
 
