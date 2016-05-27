@@ -29,6 +29,13 @@
 			transform: rotate(50deg);
 			top: -53px;
 			right: -125px;
+
+			@include respond-to('small')
+			{
+				background-size: 120px;
+				top: -108px;
+				right: 81px;
+			}
 		}
 	}
 

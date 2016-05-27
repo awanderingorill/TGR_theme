@@ -25,12 +25,22 @@
 		{
 			text-align: center;
 		}
+
+		@include respond-to('small')
+		{
+			font-size: 1rem;
+		}
 	}
 
 	.modular-row
 	{
 		padding: 6rem;
 		flex-grow: 4;
+
+		@include respond-to('small')
+		{
+			padding: 2rem;
+		}
 	}
 
 	ul

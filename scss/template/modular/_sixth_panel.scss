@@ -17,6 +17,11 @@
 		color: $white;
 		margin-bottom: 0 !important;
 		padding: 6rem;
+
+		@include respond-to('small')
+		{
+			padding: 2rem;
+		}
 	}
 
 	ul

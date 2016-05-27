@@ -2,6 +2,22 @@
 .modular.header-image #header #navbar a {
   color: #000000 !important; }
 
+@font-face {
+  font-family: 'Didot-Regular';
+  src: url("../assets/fonts/Didot_gdi.eot");
+  src: url("../assets/fonts/Didot_gdi.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Didot_gdi.woff") format("woff"), url("../assets/fonts/Didot_gdi.ttf") format("truetype"), url("../assets/fonts/Didot_gdi.svg#Didot-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0-10FFFF; }
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url("../assets/fonts/Avenir-Book_gdi.eot");
+  src: url("../assets/fonts/Avenir-Book_gdi.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Avenir-Book_gdi.woff") format("woff"), url("../assets/fonts/Avenir-Book_gdi.ttf") format("truetype"), url("../assets/fonts/Avenir-Book_gdi.svg#Avenir-Book") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA; }
 #header #logo h3, #header #navbar ul.navigation, #header #navbar .panel-activation, #footer p {
   position: relative;
   top: 50%;
@@ -58,16 +74,16 @@ b, strong, label, th {
   transition: all 0.5s ease; }
 
 .padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .content-wrapper, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header, #footer {
-  padding-left: 7rem;
-  padding-right: 7rem; }
+  padding-left: 0rem;
+  padding-right: 0rem; }
   @media only all and (max-width: 59.938em) {
     .padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .content-wrapper, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header, #footer {
-      padding-left: 4rem;
-      padding-right: 4rem; } }
+      padding-left: -3rem;
+      padding-right: -3rem; } }
   @media only all and (max-width: 47.938em) {
     .padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .content-wrapper, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header, #footer {
-      padding-left: 1rem;
-      padding-right: 1rem; } }
+      padding-left: -6rem;
+      padding-right: -6rem; } }
 
 .padding-vert {
   padding-top: 3rem;
@@ -120,7 +136,7 @@ b, strong, label, th {
           float: left;
           position: relative; }
           #header #navbar ul.navigation li a {
-            font-family: "Avenir", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+            font-family: "Avenir-Book", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
             display: inline-block;
             padding: 0.3rem 0.8rem; }
             #header #navbar ul.navigation li a:before, #header #navbar ul.navigation li a:after {
@@ -204,8 +220,8 @@ b, strong, label, th {
   padding-left: 0;
   padding-right: 0; }
   .header-image.fullwidth #body > .listing-row {
-    padding-left: 7rem;
-    padding-right: 7rem; }
+    padding-left: 0rem;
+    padding-right: 0rem; }
 .header-image .listing-row:last-child {
   margin-bottom: 2rem; }
 .header-image #body .flush-top {
@@ -257,27 +273,27 @@ b, strong, label, th {
       color: #fff; }
 
 html, body, button, input, select, textarea, .pure-g, .pure-g [class*="pure-u"] {
-  font-family: "Avenir", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "Avenir-Book", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Avenir", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "Avenir-Book", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
   letter-spacing: -0px; }
 
 h1 {
   font-size: 30pt;
-  font-family: "Avenir", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "Avenir-Book", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 600; }
   @media only all and (max-width: 47.938em) {
     h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       line-height: 1.2;
       margin-bottom: 2.5rem; } }
 
 h2 {
-  font-family: "Didot", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; }
+  font-family: "Didot-Regular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; }
   @media only all and (min-width: 48em) and (max-width: 59.938em) {
     h2 {
       font-size: 2.1rem; } }
@@ -316,7 +332,7 @@ h1 + h2 {
   font-size: 2rem;
   line-height: 1;
   text-align: center;
-  font-family: "Didot", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "Didot-Regular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 300; }
   @media only all and (min-width: 48em) and (max-width: 59.938em) {
     h1 + h2 {
@@ -330,7 +346,7 @@ h2 + h3 {
   font-size: 2rem;
   line-height: 1;
   text-align: center;
-  font-family: "Avenir", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "Avenir-Book", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 300; }
   @media only all and (min-width: 48em) and (max-width: 59.938em) {
     h2 + h3 {
@@ -436,7 +452,7 @@ hr {
   display: inline-block;
   text-align: center;
   font-size: 0.7rem;
-  font-family: "Didot", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "Didot-Regular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   margin-right: 0.75rem; }
 
 fieldset {
@@ -686,7 +702,8 @@ div#breadcrumbs {
       display: none; } }
 
 #sidebar {
-  padding-left: 3rem; }
+  padding-left: 3rem;
+  background-color: #f9402c !important; }
   @media only all and (max-width: 47.938em) {
     #sidebar {
       padding-left: 0; } }
@@ -908,6 +925,11 @@ ul.pagination {
       transform: rotate(50deg);
       top: -53px;
       right: -125px; }
+      @media (max-width: 450px) {
+        .cover h1:after {
+          background-size: 120px;
+          top: -108px;
+          right: 81px; } }
   .cover h3 {
     display: inline-block; }
     @media (max-width: 450px) {
@@ -938,7 +960,7 @@ ul.pagination {
     display: flex;
     flex-flow: row nowrap; }
   .cover h1, .cover h2, .cover h3, .cover h4, .cover h5, .cover h6 {
-    font-family: "Didot", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif !important;
+    font-family: "Didot-Regular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif !important;
     font-weight: 300; }
   .cover .header-box:first-of-type {
     background-color: #f9402c;
@@ -1079,9 +1101,12 @@ ul.pagination {
   position: relative;
   top: 0;
   padding-bottom: 100px; }
+  @media (max-width: 450px) {
+    .grav-lightslider {
+      padding-bottom: 2rem; } }
   .grav-lightslider * {
     color: #585758 !important;
-    font-family: "Avenir", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif !important; }
+    font-family: "Avenir-Book", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif !important; }
   .grav-lightslider li.active a {
     background-color: #f9402c !important; }
   .grav-lightslider li a:hover {
@@ -1152,9 +1177,15 @@ ul.pagination {
     text-align: center; }
     .about h4 + p {
       text-align: center; }
+    @media (max-width: 450px) {
+      .about h4 {
+        font-size: 1rem; } }
   .about .modular-row {
     padding: 6rem;
     flex-grow: 4; }
+    @media (max-width: 450px) {
+      .about .modular-row {
+        padding: 2rem; } }
   .about ul {
     list-style-type: none;
     padding-left: 0; }
@@ -1174,6 +1205,9 @@ ul.pagination {
     color: #fff;
     margin-bottom: 0 !important;
     padding: 6rem; }
+    @media (max-width: 450px) {
+      .contact .modular-row {
+        padding: 2rem; } }
   .contact ul {
     list-style-type: none;
     padding-left: 0;

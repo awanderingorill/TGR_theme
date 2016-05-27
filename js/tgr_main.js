@@ -42,7 +42,8 @@ $(document).ready(function()
 	var width = $(window).width();
 	if (width <= 500)
 	{
-		console.log('mobile');
 		$('.panel-padding').css('padding', '0px 15px');
+
+		$('.grav-lightslider').parent('.strategy').css('position', 'relative').css('top', '-20px');
 	}
 })

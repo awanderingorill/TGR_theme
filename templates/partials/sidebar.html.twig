@@ -18,8 +18,10 @@
 </div>
 {% endif %}
 <div class="sidebar-content">
-	<h4>Some Text Widget</h4>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+    {% for child in taxonomy.findTaxonomy({ 'category': 'sidebar' }) %}
+        {{ child.media.images|first }}
+        {# {{ header_image_media.cropZoom(header_image_width, header_image_height).html }} #}
+    {% endfor %}
 </div>
 {% if config.plugins.taxonomylist.enabled %}
 <div class="sidebar-content">
