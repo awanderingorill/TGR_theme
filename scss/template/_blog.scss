@@ -31,11 +31,25 @@
     }
 }
 
+#listing, #sidebar
+{
+    padding: 5rem 3rem;
+}
+
+.sidebar-date
+{
+    display: block;
+    font-size: 0.9rem !important;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
 // List Blog Item
 .list-item {
 
     border-bottom: 1px solid $border-color;
     margin-bottom: $padding-vert;
+    padding: 0 3rem;
 
     &:last-child {
         border-bottom: 0;
@@ -46,6 +60,8 @@
         h4 {
 
             margin-bottom: 0.5rem;
+            font-size: 2rem;
+            font-weight: 300;
             a {
                 color: $core-text;
                 &:hover {
@@ -62,12 +78,12 @@
     }
 
     .list-blog-date {
-        float: right;
-        text-align: center;
+        // float: right;
+        text-align: left;
         span {
             display: block;
-            font-size: 1.75rem;
-            font-weight: $font-weight-bold;
+            font-size: 1rem;
+            // font-weight: $font-weight-bold;
             line-height: 110%;
         }
         em {
@@ -81,9 +97,17 @@
 
 // Bigger first para
 .blog-content-item {
+    padding-top: 5rem;
+
     .list-blog-padding > p:nth-child(2) {
         font-size: $core-font-size + 0.2rem;
     }
+}
+
+.blog-content-list
+{
+    position: absolute;
+    top: 0;
 }
 
 // Tags
@@ -145,6 +169,7 @@ div#breadcrumbs {
 #sidebar {
     padding-left: 3rem;
     background-color: $orange !important;
+    min-height: 100vh;
 
     @include breakpoint(mobile-only) {
         padding-left: 0;
@@ -160,6 +185,21 @@ div#breadcrumbs {
     }
 }
 
+.sidebar-content-item
+{
+    padding-bottom: 2rem;
+    *
+    {    
+        color: $white;
+        font-size: 1.5em;
+    }
+
+    a:hover
+    {
+        border-bottom: 1px solid $white;
+    }
+}
+
 // Pagination
 ul.pagination {
     margin: 0 0 $padding-vert;
@@ -170,4 +210,32 @@ ul.pagination {
 .prev-next {
     margin-top: 5rem;
     text-align: center;
+    display: none;
+}
+
+.search-wrapper .search-input
+{
+    background-color: transparent;
+    border: 1px solid $black;
+    color: $black;
+    border-radius: 0;
+
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+
+    &::-webkit-input-placeholder
+    {
+        color: $black;
+    }
+
+    &:hover, &:active, &:focus
+    {
+        border: 1px solid $black;
+        color: $black;
+        &::-webkit-input-placeholder
+        {
+            color: $black;
+        }
+    }
 }

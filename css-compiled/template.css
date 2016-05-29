@@ -632,15 +632,27 @@ td {
   .blog-header + .blog-content {
     padding-top: 3rem; }
 
+#listing, #sidebar {
+  padding: 5rem 3rem; }
+
+.sidebar-date {
+  display: block;
+  font-size: 0.9rem !important;
+  text-align: right;
+  margin-bottom: 15px; }
+
 .list-item {
   border-bottom: 1px solid #EEEEEE;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  padding: 0 3rem; }
   .list-item:last-child {
     border-bottom: 0; }
   .list-item .list-blog-header {
     position: relative; }
     .list-item .list-blog-header h4 {
-      margin-bottom: 0.5rem; }
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+      font-weight: 300; }
       .list-item .list-blog-header h4 a {
         color: #585758; }
         .list-item .list-blog-header h4 a:hover {
@@ -650,12 +662,10 @@ td {
       margin-top: 1rem;
       border-radius: 3px; }
   .list-item .list-blog-date {
-    float: right;
-    text-align: center; }
+    text-align: left; }
     .list-item .list-blog-date span {
       display: block;
-      font-size: 1.75rem;
-      font-weight: 600;
+      font-size: 1rem;
       line-height: 110%; }
     .list-item .list-blog-date em {
       display: block;
@@ -663,8 +673,14 @@ td {
       font-style: normal;
       text-transform: uppercase; }
 
-.blog-content-item .list-blog-padding > p:nth-child(2) {
-  font-size: 1.2rem; }
+.blog-content-item {
+  padding-top: 5rem; }
+  .blog-content-item .list-blog-padding > p:nth-child(2) {
+    font-size: 1.2rem; }
+
+.blog-content-list {
+  position: absolute;
+  top: 0; }
 
 .tags a {
   display: inline-block;
@@ -703,7 +719,8 @@ div#breadcrumbs {
 
 #sidebar {
   padding-left: 3rem;
-  background-color: #f9402c !important; }
+  background-color: #f9402c !important;
+  min-height: 100vh; }
   @media only all and (max-width: 47.938em) {
     #sidebar {
       padding-left: 0; } }
@@ -714,13 +731,38 @@ div#breadcrumbs {
     #sidebar .sidebar-content p, #sidebar .sidebar-content ul {
       margin-top: 1rem; }
 
+.sidebar-content-item {
+  padding-bottom: 2rem; }
+  .sidebar-content-item * {
+    color: #fff;
+    font-size: 1.5em; }
+  .sidebar-content-item a:hover {
+    border-bottom: 1px solid #fff; }
+
 ul.pagination {
   margin: 0 0 3rem;
   text-align: center; }
 
 .prev-next {
   margin-top: 5rem;
-  text-align: center; }
+  text-align: center;
+  display: none; }
+
+.search-wrapper .search-input {
+  background-color: transparent;
+  border: 1px solid #000000;
+  color: #000000;
+  border-radius: 0;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-size: 1rem; }
+  .search-wrapper .search-input::-webkit-input-placeholder {
+    color: #000000; }
+  .search-wrapper .search-input:hover, .search-wrapper .search-input:active, .search-wrapper .search-input:focus {
+    border: 1px solid #000000;
+    color: #000000; }
+    .search-wrapper .search-input:hover::-webkit-input-placeholder, .search-wrapper .search-input:active::-webkit-input-placeholder, .search-wrapper .search-input:focus::-webkit-input-placeholder {
+      color: #000000; }
 
 #error {
   text-align: center;

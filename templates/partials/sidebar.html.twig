@@ -3,7 +3,6 @@
 
 {% if config.plugins.simplesearch.enabled %}
 <div class="sidebar-content">
-    <h4>SimpleSearch</h4>
     {% include 'partials/simplesearch_searchbox.html.twig' %}
 </div>
 {% endif %}
@@ -17,10 +16,22 @@
 	<a class="button" href="{{ base_url }}/random"><i class="fa fa-retweet"></i> I'm Feeling Lucky!</a>
 </div>
 {% endif %}
+
+{# Sidebar Posts #}
 <div class="sidebar-content">
     {% for child in taxonomy.findTaxonomy({ 'category': 'sidebar' }) %}
-        {{ child.media.images|first }}
-        {# {{ header_image_media.cropZoom(header_image_width, header_image_height).html }} #}
+        <div class="sidebar-content-item">
+            {% if child.media.images is not empty %}
+                <div class="sidebar-date">
+                    {{ child.date|date('M j, Y') }}
+                </div>
+                {{ child.media.images|first }}
+            {% else %}
+                <a href="{{ child.content|striptags }}" target="new">
+                    {{ child.title }}
+                </a>
+            {% endif %}
+        </div>
     {% endfor %}
 </div>
 {% if config.plugins.taxonomylist.enabled %}

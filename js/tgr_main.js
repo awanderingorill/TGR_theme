@@ -46,4 +46,5 @@ $(document).ready(function()
 
 		$('.grav-lightslider').parent('.strategy').css('position', 'relative').css('top', '-20px');
 	}
+
 })
