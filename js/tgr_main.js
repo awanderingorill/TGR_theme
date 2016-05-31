@@ -47,4 +47,10 @@ $(document).ready(function()
 		$('.grav-lightslider').parent('.strategy').css('position', 'relative').css('top', '-20px');
 	}
 
+	$('#blog').click(function()
+	{
+		console.dir(window.location);
+		return window.location.href = window.location.href + 'blog';
+	})
+
 })

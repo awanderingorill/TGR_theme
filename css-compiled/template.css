@@ -312,10 +312,10 @@ h4 {
   font-weight: 700; }
   @media only all and (min-width: 48em) and (max-width: 59.938em) {
     h4 {
-      font-size: 0.6rem; } }
+      font-size: 13.6pt; } }
   @media only all and (max-width: 47.938em) {
     h4 {
-      font-size: 0.5rem; } }
+      font-size: 13.5pt; } }
 
 h1 {
   text-align: center;
@@ -943,16 +943,42 @@ ul.pagination {
   .callout img {
     border-radius: 3px; }
 
+.down-carat {
+  background: url("../images/down-caret.svg") no-repeat center center;
+  background-size: 100%;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  bottom: 50px;
+  margin-left: 48.8%;
+  margin-right: -50%;
+  opacity: 0.7; }
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%); }
+  50% {
+    transform: translateY(50%); }
+  100% {
+    transform: translateY(0%); } }
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%); }
+  50% {
+    -webkit-transform: translateY(50%); }
+  100% {
+    -webkit-transform: translateY(0%); } }
 .cover {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .cover h1 {
-    font-size: 70pt;
+    font-size: 80pt;
     letter-spacing: initial;
-    margin-left: 7rem; }
+    margin-left: 9rem; }
     @media (max-width: 450px) {
       .cover h1 {
         font-size: 30pt;
@@ -960,13 +986,14 @@ ul.pagination {
     .cover h1:after {
       display: block;
       content: '';
-      height: 300px;
-      width: 300px;
+      height: 350px;
+      width: 350px;
       background: url("../images/glasses.svg") no-repeat center center;
       position: absolute;
       transform: rotate(50deg);
-      top: -53px;
-      right: -125px; }
+      top: -57px;
+      right: -215px;
+      background-size: 100%; }
       @media (max-width: 450px) {
         .cover h1:after {
           background-size: 120px;
@@ -1023,7 +1050,7 @@ ul.pagination {
     width: 300px; }
   .details .modular-row {
     flex-grow: 4;
-    padding: 4rem; }
+    padding: 6rem; }
     @media (max-width: 450px) {
       .details .modular-row {
         padding: 1rem; } }
@@ -1034,24 +1061,28 @@ ul.pagination {
       .details .second-panel-columns {
         flex-flow: column; } }
   .details .second-panel-column {
-    width: 50%; }
+    width: 50%;
+    padding: 2rem; }
     @media (max-width: 450px) {
       .details .second-panel-column {
         width: 100%; } }
   .details h4 {
-    text-align: center; }
+    text-align: left; }
     @media (max-width: 450px) {
       .details h4 {
         font-size: 1rem; } }
+  .details ul {
+    padding-left: 0; }
 
 .services {
   color: #fff !important; }
   .services .modular-row {
     background-color: #585758 !important;
-    position: relative; }
+    position: relative;
+    padding: 6rem; }
   .services h1 {
     text-align: right;
-    padding-right: 6rem; }
+    padding-right: 10rem; }
     @media (max-width: 450px) {
       .services h1 {
         padding-right: 2rem;
@@ -1064,14 +1095,14 @@ ul.pagination {
         padding-top: 2rem; } }
   .services h2:first-of-type {
     text-align: right;
-    padding: 4rem 6rem; }
+    padding: 4rem 10rem 1rem 10rem; }
     @media (max-width: 450px) {
       .services h2:first-of-type {
         padding: 1rem 2rem;
         padding-top: 2rem;
         margin: 0; } }
   .services ul {
-    padding-bottom: 6rem; }
+    padding: 2rem 10rem 4rem 10rem; }
     @media (max-width: 450px) {
       .services ul {
         padding: 2rem !important;
@@ -1079,8 +1110,6 @@ ul.pagination {
         margin-bottom: 2rem;
         margin-left: 1rem;
         text-align: left; } }
-  .services h2, .services ul {
-    padding-left: 6rem; }
 
 .services-buttons {
   display: flex;
@@ -1120,7 +1149,7 @@ ul.pagination {
     background: url("../images/glasses.svg") no-repeat center center;
     position: absolute;
     transform: rotate(50deg);
-    top: 920px;
+    bottom: -170px;
     right: 90px;
     opacity: 0.5; }
 
@@ -1129,10 +1158,9 @@ ul.pagination {
   text-align: center; }
   .services-callout-panel h2 {
     font-size: 2rem;
-    padding: 6rem;
-    padding-bottom: 3rem;
-    margin: 0 !important;
-    text-align: center !important; }
+    margin: 0 auto !important;
+    text-align: center !important;
+    width: 1000px; }
     @media (max-width: 450px) {
       .services-callout-panel h2 {
         font-size: 1.5rem; } }

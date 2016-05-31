@@ -32,9 +32,18 @@
         {% for module in page.collection() %}
             {% if module.menu == 'Services' or module.menu == 'Clients' or module.menu == 'About' or module.menu == 'Contact' %}
                 {% set current_module = (module.active or module.activeChild) ? 'active' : '' %}
-                <li class="{{ current_module }}"><a href="#{{ _self.pageLinkName(module.menu) }}">{{ module.menu }}</a></li>
+                <li class="{{ current_module }}">
+                    <a href="#{{ _self.pageLinkName(module.menu) }}">
+                        {{ module.menu }}
+                    </a>
+                </li>
             {% endif %}
         {% endfor %}
+        <li class="blog" id="blog">
+            <a href="/blog" target="new">
+                Blog
+            </a>
+        </li>
         {% for mitem in site.menu %}
             <li>
                 <a href="{{ mitem.url }}">

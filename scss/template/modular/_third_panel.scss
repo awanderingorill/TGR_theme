@@ -6,12 +6,13 @@
 	{
 		background-color: $gray !important;
 		position: relative;
+		padding: 6rem;
 	}
 
 	h1
 	{
 		text-align: right;
-		padding-right: 6rem;
+		padding-right: 10rem;
 
 		@include respond-to('small')
 		{
@@ -34,7 +35,7 @@
 	h2:first-of-type
 	{
 		text-align: right;
-		padding: 4rem 6rem;
+		padding: 4rem 10rem 1rem 10rem;
 
 		@include respond-to('small')
 		{
@@ -46,7 +47,8 @@
 
 	ul
 	{
-		padding-bottom: 6rem;
+		// padding-bottom: 6rem;
+		padding: 2rem 10rem 4rem 10rem;
 
 		@include respond-to('small')
 		{
@@ -58,10 +60,10 @@
 		}
 	}
 
-	h2, ul
-	{
-		padding-left: 6rem;
-	}
+	// h2, ul
+	// {
+	// 	padding-left: 6rem;
+	// }
 }
 
 .services-buttons
@@ -132,7 +134,7 @@
 		background: url('../images/glasses.svg') no-repeat center center;
 		position: absolute;
 		transform: rotate(50deg);
-		top: 920px;
+		bottom: -170px;
 		right: 90px;
 		opacity: 0.5;
 	}
@@ -146,10 +148,9 @@
 	h2
 	{
 		font-size: 2rem;
-		padding: 6rem;
-		padding-bottom: 3rem;
-		margin: 0 !important;
+		margin: 0 auto !important;
 		text-align: center !important;
+		width: 1000px;
 
 		@include respond-to('small')
 		{

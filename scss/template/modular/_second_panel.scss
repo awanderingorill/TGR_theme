@@ -20,7 +20,7 @@
 	.modular-row
 	{
 		flex-grow: 4;
-		padding: 4rem;
+		padding: 6rem;
 
 		@include respond-to('small')
 		{
@@ -42,6 +42,7 @@
 	.second-panel-column
 	{
 		width: 50%;
+		padding: 2rem;
 
 		@include respond-to('small')
 		{
@@ -51,11 +52,16 @@
 
 	h4
 	{
-		text-align: center;
+		text-align: left;
 
 		@include respond-to('small')
 		{
 			font-size: 1rem;
 		}
+	}
+
+	ul
+	{
+		padding-left: 0;
 	}
 }

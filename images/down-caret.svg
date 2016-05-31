@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px"
+	 height="16px" viewBox="0 0 28 16" enable-background="new 0 0 28 16" xml:space="preserve">
+<g id="Artwork">
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="13.9903" y1="-520.1348" x2="13.9903" y2="-731.6013" gradientTransform="matrix(1 0 0 5.5014 0 3291.7207)">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#DFDFDF"/>
+	</linearGradient>
+	<rect x="-496" y="-733.1" display="none" opacity="0.2" fill="url(#SVGID_1_)" width="1020" height="1163.4"/>
+	<polyline fill="none" stroke="#231F20" stroke-width="3" points="1.4,1.5 14,13.8 26.6,1.1 	"/>
+</g>
+<g id="Instructions" display="none">
+</g>
+<g id="_x31_2_Col_Grid" display="none" opacity="0.1" enable-background="new    ">
+	<g display="inline">
+		<g>
+			<rect x="23.1" y="-699.5" fill="#FF0000" width="60" height="2780.6"/>
+		</g>
+		<g>
+			<rect x="-56.9" y="-699.5" fill="#FF0000" width="60" height="2780.6"/>
+		</g>
+	</g>
+</g>
+</svg>
