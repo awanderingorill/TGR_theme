@@ -9,31 +9,6 @@
 	margin-left: 48.8%;
 	margin-right: -50%;
 	opacity: 0.7;
-	// animation: floating 1.5s infinite;
-}
-
-@keyframes floating {
-	0% {
-		transform: translateY(0%);	
-	}
-	50% {
-		transform: translateY(50%);	
-	}	
-	100% {
-		transform: translateY(0%);
-	}			
-}
-
-@-webkit-keyframes floating {
-	0% {
-		-webkit-transform: translateY(0%);	
-	}
-	50% {
-		-webkit-transform: translateY(50%);	
-	}	
-	100% {
-		-webkit-transform: translateY(0%);
-	}			
 }
 
 .cover
@@ -47,9 +22,9 @@
 
 	h1
 	{
-		font-size: 80pt;
+		font-size: 120pt;
 		letter-spacing: initial;
-		margin-left: 9rem;
+		margin-left: 2rem;
 
 		@include respond-to('small')
 		{
@@ -61,13 +36,13 @@
 		{
 			display: block;
 			content: '';
-			height: 350px;
-			width: 350px;
+			height: 450px;
+			width: 450px;
 			background: url('../images/glasses.svg') no-repeat center center;
 			position: absolute;
 			transform: rotate(50deg);
-			top: -57px;
-			right: -215px;
+			top: 58px;
+			right: -259px;
 			background-size: 100%;
 
 			@include respond-to('small')
@@ -105,17 +80,17 @@
 	.modular-row
 	{
 		position: absolute;
-		top: 50px;
+		top: 0;
 		background: transparent;
-		left: 50%;
+		left: 0%;
 	}
 
-	.section-content
-	{
-		position: relative;
-		left: -50%;
-		width: 750px;
-	}
+	// .section-content
+	// {
+	// 	position: relative;
+	// 	left: -50%;
+	// 	width: 750px;
+	// }
 
 	.header-boxes
 	{
@@ -142,6 +117,6 @@
 	.header-box:last-of-type
 	{
 		background-color: $white;
-		flex-grow: 1;
+		flex-grow: 2.5;
 	}
 }
