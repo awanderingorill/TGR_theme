@@ -49,8 +49,27 @@ $(document).ready(function()
 
 	$('#blog').click(function()
 	{
-		console.dir(window.location);
-		return window.location.href = window.location.href + 'blog';
-	})
+		return window.location.href = window.location.origin + '/blog';
+	});
+
+	// Font-resizing on the header
+	$('body').flowtype();
+	// $('h2').flowtype();
+
+	$('body').flowtype({
+		minimum   : 500,
+		maximum   : 1500,
+		minFont   : 14,
+		maxFont   : 20,
+		fontRatio : 30
+	});
+
+	$('h2').flowtype({
+		minimum   : 500,
+		maximum   : 1500,
+		minFont   : 20,
+		maxFont   : 50,
+		fontRatio : 30
+	});
 
 })
