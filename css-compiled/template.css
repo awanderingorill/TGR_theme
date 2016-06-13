@@ -1041,12 +1041,12 @@ ul.pagination {
     .details h2 {
       font-size: 1.5rem; } }
   .details .side-box {
-    flex-grow: 1;
     background: #f9402c;
-    width: 300px; }
+    width: 300px;
+    flex: 1 0 0%; }
   .details .modular-row {
-    flex-grow: 4;
-    padding: 6rem; }
+    flex: 4 0 0%;
+    padding: 6rem 10rem; }
     @media (max-width: 450px) {
       .details .modular-row {
         padding: 1rem; } }
@@ -1075,7 +1075,7 @@ ul.pagination {
   .services .modular-row {
     background-color: #585758 !important;
     position: relative;
-    padding: 6rem; }
+    padding: 10rem; }
   .services h1 {
     text-align: right;
     padding-right: 10rem; }
@@ -1150,7 +1150,8 @@ ul.pagination {
     transform: rotate(50deg);
     bottom: -170px;
     right: 90px;
-    opacity: 0.5; }
+    opacity: 0.5;
+    background-size: 100%; }
 
 .services-callout-panel {
   display: none;
@@ -1207,7 +1208,7 @@ ul.pagination {
 .clients {
   color: #fff !important; }
   .clients .modular-row {
-    padding: 6rem;
+    padding: 10rem;
     background-color: #f9402c !important; }
     @media (max-width: 450px) {
       .clients .modular-row {
@@ -1251,7 +1252,7 @@ ul.pagination {
       .about h4 {
         font-size: 1rem; } }
   .about .modular-row {
-    padding: 6rem;
+    padding: 6rem 14rem;
     flex-grow: 4; }
     @media (max-width: 450px) {
       .about .modular-row {
@@ -1260,6 +1261,12 @@ ul.pagination {
     padding-left: 20px; }
   .about li {
     margin-bottom: 1.5rem; }
+  .about img {
+    max-width: 300px;
+    float: left;
+    margin: 0 2rem 0 2rem; }
+  .about a:hover {
+    border-bottom: 1px solid #f9402c; }
 
 .contact {
   display: flex;

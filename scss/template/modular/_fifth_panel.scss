@@ -2,7 +2,7 @@
 {
 	display: flex;
 	flex-flow: row nowrap;
-    position: relative;
+	position: relative;
 	top: -2rem;
 
 	.side-box
@@ -34,7 +34,7 @@
 
 	.modular-row
 	{
-		padding: 6rem;
+		padding: 6rem 14rem;
 		flex-grow: 4;
 
 		@include respond-to('small')
@@ -51,5 +51,17 @@
 	li
 	{
 		margin-bottom: 1.5rem;
+	}
+
+	img
+	{
+		max-width: 300px;
+		float: left;
+		margin: 0 2rem 0 2rem;
+	}
+
+	a:hover
+	{
+		border-bottom: 1px solid $orange;
 	}
 }

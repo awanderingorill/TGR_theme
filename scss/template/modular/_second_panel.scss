@@ -12,15 +12,15 @@
 
 	.side-box
 	{
-		flex-grow: 1;
 		background: $orange;
 		width: 300px;
+		flex: 1 0 0%;
 	}
 
 	.modular-row
 	{
-		flex-grow: 4;
-		padding: 6rem;
+		flex: 4 0 0%;
+		padding: 6rem 10rem;
 
 		@include respond-to('small')
 		{
