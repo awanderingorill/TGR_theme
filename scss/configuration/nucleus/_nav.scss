@@ -5,4 +5,9 @@ $flyout-width:					140px !default;
 .modular.header-image #header #navbar a
 {
 	color: $black !important;
+
+	&:hover
+	{
+		border-bottom: none !important;
+	}
 }

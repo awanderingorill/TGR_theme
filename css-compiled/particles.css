@@ -1,5 +1,7 @@
 .modular.header-image #header #navbar a {
   color: #000000 !important; }
+  .modular.header-image #header #navbar a:hover {
+    border-bottom: none !important; }
 
 @font-face {
   font-family: 'Didot-Regular';

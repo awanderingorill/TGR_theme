@@ -67,7 +67,7 @@ $(document).ready(function()
 	$('h2').flowtype({
 		minimum   : 500,
 		maximum   : 1500,
-		minFont   : 20,
+		minFont   : 30,
 		maxFont   : 50,
 		fontRatio : 30
 	});

@@ -23,3 +23,8 @@
 		letter-spacing: initial !important;
 	}
 }
+
+a:hover
+{
+	border-bottom: 1px solid $orange;
+}

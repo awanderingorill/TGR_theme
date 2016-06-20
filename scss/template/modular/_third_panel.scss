@@ -21,6 +21,11 @@
 		}
 	}
 
+	.modular .modular-row:last-child
+	{
+		margin-bottom: 0 !important;
+	}
+
 	.callout
 	{
 		padding: 0;
@@ -35,7 +40,7 @@
 	h2:first-of-type
 	{
 		text-align: right;
-		padding: 4rem 10rem 1rem 10rem;
+		padding: 4rem 12rem 1rem 12rem;
 
 		@include respond-to('small')
 		{
@@ -47,7 +52,7 @@
 
 	ul
 	{
-		padding: 2rem 10rem 4rem 10rem;
+		padding: 2rem 12rem 4rem 12rem;
 
 		@include respond-to('small')
 		{
@@ -123,6 +128,8 @@
 	h4
 	{
 		text-align: center !important;
+		font-weight: 300;
+		margin-top: 4rem;
 	}
 
 	&:after
@@ -150,7 +157,7 @@
 	{
 		font-size: 2rem;
 		margin: 0 auto !important;
-		text-align: center !important;
+		text-align: right !important;
 		width: 1000px;
 
 		@include respond-to('small')
@@ -196,6 +203,8 @@
 	h1
 	{
 		font-weight: 300;
+		font-size: 16pt;
+		text-align: left;
 
 		@include respond-to('small')
 		{
@@ -208,6 +217,11 @@
 		color: $orange !important;
 		font-weight: 700;
 	}
+}
+
+.lSNext:hover, .lSPrev:hover
+{
+	border-bottom: none;
 }
 
 .lSAction > .lSNext
